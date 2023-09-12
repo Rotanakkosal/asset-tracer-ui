@@ -17,9 +17,6 @@ pipeline {
                steps{
                     echo " Install Node modules .."
                     sh "npm install -f"
-                    
-                    echo "Build React Project ... "
-                    sh "npm run build"
                }
           }
           stage("Test"){
