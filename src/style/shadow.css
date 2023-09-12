@@ -1,0 +1,19 @@
+.con-Shadow {
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+}
+
+.con-Shadow-Card {
+    box-shadow: 0px 1.87542px 4.68855px rgba(0, 0, 0, 0.2);
+}
+
+.con-Shadow-Card:hover {
+    box-shadow: 0px 3.75084px 16.2626px rgba(0, 0, 0, 0.1);
+}
+
+.con-Shadow-btn {
+    box-shadow: 0px 8px 16px rgba(250, 116, 54, 0.24);
+}
+
+.con-pro-color{
+    background: rgba(0, 172, 79, 0.2);
+}

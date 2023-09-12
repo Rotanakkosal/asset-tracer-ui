@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang&display=swap');
+
+@font-face {
+  font-family: "sp-pro-text-light";
+  src: url(../src/assets/fonts/sfwin-master/SFPro/OpenType/SF-Pro-Text-Light.otf);
+}
+
+
+@font-face {
+  font-family: "sp-pro-text-regular";
+  src: url(../src/assets/fonts/sfwin-master/SFPro/OpenType/SF-Pro-Text-Regular.otf);
+}
+
+@font-face {
+  font-family: "sp-pro-text-bold";
+  src: url(../src/assets/fonts/sfwin-master/SFPro/OpenType/SF-Pro-Text-Bold.otf);
+}
+
+@font-face {
+  font-family: "sp-pro-text-medium";
+  src: url(../src/assets/fonts/sfwin-master/SFPro/OpenType/SF-Pro-Text-Medium.otf);
+}
+
+@font-face {
+  font-family: "sp-pro-text-semibold";
+  src: url(../src/assets/fonts/sfwin-master/SFPro/OpenType/SF-Pro-Text-Semibold.otf);
+}
+
+@font-face {
+  font-family: "sp-pro-text-heavy";
+  src: url(../src/assets/fonts/sfwin-master/SFPro/OpenType/SF-Pro-Text-Heavy.otf);
+}
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "sp-pro-text-regular", 'Battambang', cursive;
+  font-size: 14px;
+  color: rgb(50,76,91,0.9);
+
+}

@@ -1,0 +1,24 @@
+
+.burger_ico {
+    display: none;
+}
+
+@media only screen and (max-width: 640px){
+	.header {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+}
+
+.szh-menu__item {
+    border: none;
+    padding: 0;
+}
+
+.szh-menu {
+    border: 1px solid #ededed !important;
+    padding: 10px 0px !important;
+    top: 31.9957px !important;
+}
