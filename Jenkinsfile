@@ -45,7 +45,7 @@ pipeline {
                     }
                     
                     echo "Deploying container..."
-                    sh "docker run -d -p 3003:3000 --name ${DOCKER_IMAGE}:${tag} ${DOCKER_IMAGE}:${tag}"
+                    sh "docker run -d -p 3003:3000 --name ${DOCKER_IMAGE} ${DOCKER_IMAGE}:${tag}"
                     
                     echo "List Docker Containers"
                     sh "docker ps | grep ${DOCKER_IMAGE}:${tag}"
