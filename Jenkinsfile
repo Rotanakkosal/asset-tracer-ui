@@ -35,7 +35,7 @@ pipeline {
         stage("Deploy") {
             steps {
                 script {
-                    def containerId = sh(script: 'docker ps -q -f "name=${DOCKER_IMAGE}:${tag}"', returnStdout: true)
+                    def containerId = sh(script: 'docker ps -aq -f "name=${DOCKER_IMAGE}"', returnStdout: true)
                     echo "containerID : ${containerId}"
                     if (containerId) {
                         echo "Removing existing container ${containerId}"
@@ -48,7 +48,7 @@ pipeline {
                     sh "docker run -d -p 3003:3000 --name ${DOCKER_IMAGE} ${DOCKER_IMAGE}:${tag}"
                     
                     echo "List Docker Containers"
-                    sh "docker ps | grep ${DOCKER_IMAGE}:${tag}"
+                    sh "docker ps | grep ${DOCKER_IMAGE}"
                 }
             }
         }
