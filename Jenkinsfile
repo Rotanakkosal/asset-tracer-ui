@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo "Install Node modules..."
                 sh "npm install -f"
-                echo " The directory : $(pwd)"
+                echo "The directory : $(pwd)"
             }
         }
         stage("Test") {
